@@ -3,7 +3,10 @@
 ## Getting Started
 
 1. Change directory into the target POSD project directory.
-2. Use the command to build POSD projects: docker run -it --rm --user ${UID} -v `pwd`:/code chris85618/posd
+2. Use the command to build POSD projects:
+   ```console
+   docker run -it --rm --user ${UID} -v `pwd`:/code chris85618/posd
+   ```
 
 ## Build Your Own Docker Image
 
