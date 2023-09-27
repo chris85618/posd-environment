@@ -18,4 +18,5 @@ RUN apt-get update && apt-get install -y g++ make libgtest-dev cmake \
 COPY --from=gtest /result /
 VOLUME /code
 WORKDIR /code
-CMD make
+ENTRYPOINT make
+CMD [""]
