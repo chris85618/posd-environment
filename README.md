@@ -12,4 +12,6 @@
 
 1. docker build -t posd .
 2. Change directory into the target POSD project directory.
-3. Use the command to build POSD projects: docker run -it --rm --user ${UID} -v `pwd`:/code posd
+3. Use the command to build POSD projects: ```console
+                                           docker built -t chris85618/posd .
+                                           ```
