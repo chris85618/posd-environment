@@ -13,11 +13,11 @@ RUN mkdir /result
 RUN cmake CMakeLists.txt && make && make DESTDIR=/result install
 
 FROM ubuntu:18.04
-RUN apt-get update && apt-get install -y g++ make libgtest-dev cmake gdb \
+RUN apt-get update && apt-get install -y g++ make libgtest-dev cmake \
   && rm -rf /var/lib/apt/lists/*
 RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev \
   && rm -rf /var/lib/apt/lists/*
-RUN apt-get update && apt-get install -y valgrind \
+RUN apt-get update && apt-get install -y gdb valgrind \
   && rm -rf /var/lib/apt/lists/*
 COPY --from=gtest /result /
 VOLUME /code
