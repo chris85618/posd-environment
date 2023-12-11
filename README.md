@@ -12,4 +12,4 @@
 
 1. docker build -t posd .
 2. Change directory into the target POSD project directory.
-3. Use the command to build POSD projects: `docker built -t chris85618/posd .`
+3. Use the command to build POSD projects: `docker build -t chris85618/posd .`
